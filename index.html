@@ -4,13 +4,15 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="#" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">	
 	<title>Best e-commerce page ever</title>
+	<link rel="icon" type="image/x-icon" href="favicon.ico">
 
 </head>
 <body>
 	<div id="wrapper">
 		<!--header container-->
-		<header id="header" class="">
+		<header id="headerCont" class="">
 			<span id="headerTxt">get an extra 10% off or more on select hotels with Member Pricing. Join now, it's free</span>
 			<div id="headerLogin">
 				<label id="loginLabel" class="headerLabels"><a href="#"><span>login</span></a></label>
@@ -21,7 +23,7 @@
 						<img id="headerPtbrFig" src="#" alt="icon"/>
 					</figure>
 					<select id="selectLang">
-						<option>english</option>
+						<option selected>english</option>
 						<option>português brasileiro</option>
 					</select>
 				</label>
@@ -31,23 +33,140 @@
 						<img id="real" src="#" alt="icon"/>
 					</figure>
 					<select id="selectCurrency">
-						<option>US Dollar</option>
+						<option selected>US Dollar</option>
 						<option>R$ Real</option>
 					</select>
 				</label>
 			</div>
 		</header>
 
-		<!--container 2-->
-		<div id="" class="">
+		<!--search container-->
+		<div id="searchCont" class="">
+			<figure id="companyLogo"><img src="#" alt="company logo"/></figure>
+			<div id="searchBar">
+				<select id="searchSelect">
+					<option class="searchOpt" selected>all categories</option>
+					<option class="searchOpt">category</option>
+					<option class="searchOpt">category</option>
+					<option class="searchOpt">category</option>
+					<option class="searchOpt">category</option>
+					<option class="searchOpt">category</option>
+				</select>
+				<input id="searchBar" type="text" placeholder="search"/>
+				<input id="searchBtn" type="button" value="search"/>
+			</div>
+			<div id="searchIcons">
+				<i class="material-icons">swap_horiz</i>
+				<i class="material-icons">favorite_border</i>
+				<div id="shopCart">
+					<i class="material-icons">local_mall</i>
+					<div id="shopTxt">
+						<p id="myCartTxt">my cart<p>
+						<span id="myCartItems">0 items - $0.00</span>
+					</div>
+				</div>
+			</div>
 		</div>
 
-		<!--container 3-->
-		<div id="" class="">
+		<!--categories container-->
+		<div id="categoriesCont" class="">
+			<div id="categoriesAll">
+				<select id="categSlct">
+					<option class="categOpt" selected>all categories</option>
+					<option class="categOpt">categorie 1</option>
+					<option class="categOpt">categorie 2</option>
+					<option class="categOpt">categorie 3</option>
+					<option class="categOpt">categorie 4</option>
+					<option class="categOpt">categorie 5</option>
+					<option class="categOpt">categorie 6</option>
+				</select>
+			</div>
+			<div id="categoriesEach">
+				<span class="categItems">home</span>
+				<select class="categItems">
+					<option class="categSlct" selected>features</option>
+					<option class="categSlct">feature 1</option>
+					<option class="categSlct">feature 2</option>
+					<option class="categSlct">feature 3</option>
+					<option class="categSlct">feature 4</option>
+					<option class="categSlct">feature 5</option>
+				</Select>
+				<select class="categItems">
+					<option class="categSlct" selected>collections</option>
+					<option class="categSlct">colection 1</option>
+					<option class="categSlct">colection 2</option>
+					<option class="categSlct">colection 3</option>
+					<option class="categSlct">colection 4</option>
+					<option class="categSlct">colection 5</option>
+				</Select>
+				<select class="categItems">
+					<option class="categSlct" selected>accessories</option>
+					<option class="categSlct">accessorie 1</option>
+					<option class="categSlct">accessorie 2</option>
+					<option class="categSlct">accessorie 3</option>
+					<option class="categSlct">accessorie 4</option>
+					<option class="categSlct">accessorie 5</option>
+				</Select>
+				<select class="categItems">
+					<option class="categSlct" selected>pages</option>
+					<option class="categSlct">page 1</option>
+					<option class="categSlct">page 2</option>
+					<option class="categSlct">page 3</option>
+					<option class="categSlct">page 4</option>
+					<option class="categSlct">page 5</option>
+				</Select>
+				<span class="categItems">blog</span>
+			</div>
+
+			<div id="categoriesPromo">
+				<span class="promoItems">today deals</span>
+				<span class="promoItems">buy this theme</span>
+				<i class="material-icons">messenger</i>
+				<span id="hotItems">hot</span>
+			</div>
 		</div>
 
-		<!--container 4-->
-		<div id="" class="">
+		<!--promo container 4-->
+		<div id="promoCont" class="">
+			<div id="sldShowCont">
+				<div class="slides">
+					<img src="#" alt="promo image"/>
+				</div>
+
+				<div class="slides">
+					<img src="#" alt="promo image"/>
+				</div>
+
+				<div class="slides">
+					<img src="#" alt="promo image"/>
+				</div>
+
+				<div class="slides">
+					<img src="#" alt="promo image"/>
+				</div>
+
+				<div id="dots">
+					<i class="material-icons">panorama_fish_eye</i>
+					<i class="material-icons">panorama_fish_eye</i>
+					<i class="material-icons">panorama_fish_eye</i>
+					<i class="material-icons">panorama_fish_eye</i>
+				</div>
+			</div>
+
+			<div class="miniPromo">
+				<img src="#" alt="mini promo image"/>
+				<img src="#" alt="mini promo image"/>
+				<img src="#" alt="mini promo image"/>
+				<img src="#" alt="mini promo image"/>
+				<img src="#" alt="mini promo image"/>
+				<img src="#" alt="mini promo image"/>
+			</div>
+
+			<div class="socialMedia">
+				<img src="#" alt="mini promo image"/>
+				<img src="#" alt="mini promo image"/>
+				<img src="#" alt="mini promo image"/>
+			</div>
 		</div>
 
 		<!--container 5-->
