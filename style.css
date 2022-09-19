@@ -1,0 +1,9 @@
+#headerCont {
+	justify-content: space-between;
+	font-size: 0.9rem;
+}
+
+#headerCont select {
+	width: 5rem;
+	height: auto;	
+}
