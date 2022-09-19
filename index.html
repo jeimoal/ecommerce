@@ -4,33 +4,35 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="#" rel="stylesheet" type="text/css">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">	
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="style.css" type="text/css">
 	<title>Best e-commerce page ever</title>
 	<link rel="icon" type="image/x-icon" href="favicon.ico">
 
 </head>
-<body>
-	<div id="wrapper">
+<body class="container-fluid">
+	<div id="wrapper" class="container col">
 		<!--header container-->
-		<header id="headerCont" class="">
+		<header id="headerCont" class="container-fluid d-flex pt-2">
 			<span id="headerTxt">get an extra 10% off or more on select hotels with Member Pricing. Join now, it's free</span>
-			<div id="headerLogin">
-				<label id="loginLabel" class="headerLabels"><a href="#" target=""><span>login</span></a></label>
-				<label id="myAccLabel" class="headerLabels"><a href="#" target=""><span>my account</span></a></label>
-				<label id="langLabel" class="headerLabels">
-					<figure>
-						<img id="headerEngFig" src="#" alt="usa flag">
-						<img id="headerPtbrFig" src="#" alt="brazil flag">
+			<div id="headerLogin" class="d-flex">
+				<label id="loginLabel" class="headerLabels pe-3"><a href="#" target=""><span>login</span></a></label>
+				<label id="myAccLabel" class="headerLabels pe-3"><a href="#" target=""><span>my account</span></a></label>
+				<label id="langLabel" class="headerLabels pe-3 d-flex">
+					<figure class="d-flex">
+						<img id="headerEngFig" class="pe-3" src="#" alt="usa flag">
+						<img id="headerPtbrFig" class="pe-3" src="#" alt="brazil flag" style="display: none">
 					</figure>
 					<select id="selectLang" aria-label="select language">
 						<option selected>english</option>
 						<option>português - brasileiro</option>
 					</select>
 				</label>
-				<label id="currencyLabel" class="headerLabels">
+				<label id="currencyLabel" class="headerLabels d-flex">
 					<figure>
-						<img id="dolar" src="#" alt="dolar currency icon">
-						<img id="real" src="#" alt="reais currency icon">
+						<img id="dolar" class="pe-3" src="#" alt="dolar currency icon">
+						<img id="real" class="pe-3" src="#" alt="reais currency icon" style="display: none">
 					</figure>
 					<select id="selectCurrency" aria-label="select currency">
 						<option selected>US Dollar</option>
@@ -1377,8 +1379,9 @@
 
 		</div>
 
-		<!--container 11-->
+		<!--footer-->
 		<footer>
+			<p>desenvolvido por <a href="https://jeimoal.github.io/portifolio/">Jeison Moura</a></p>
 		</footer>
 	</div>
 </body>
