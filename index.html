@@ -11,32 +11,34 @@
 	<link rel="icon" type="image/x-icon" href="favicon.ico">
 
 </head>
-<body class="container-fluid">
-	<div id="wrapper" class="container col">
+<body>
+	<div id="wrapper" class="container-fluid col">
 		<!--header container-->
-		<header id="headerCont" class="container-fluid d-flex pt-2">
-			<span id="headerTxt">get an extra 10% off or more on select hotels with Member Pricing. Join now, it's free</span>
+		<header id="headerCont" class="container-fluid d-flex pt-3 text-white bg-primary">
+			<span id="headerTxt">get an extra 10% off or more on select hotels with Member Pricing. Join now, it's free!</span>
 			<div id="headerLogin" class="d-flex">
-				<label id="loginLabel" class="headerLabels pe-3"><a href="#" target=""><span>login</span></a></label>
-				<label id="myAccLabel" class="headerLabels pe-3"><a href="#" target=""><span>my account</span></a></label>
-				<label id="langLabel" class="headerLabels pe-3 d-flex">
-					<figure class="d-flex">
-						<img id="headerEngFig" class="pe-3" src="#" alt="usa flag">
-						<img id="headerPtbrFig" class="pe-3" src="#" alt="brazil flag" style="display: none">
+				<label id="loginLabel" class="headerLabels pe-3 w-25"><a href="#" target=""><span class="text-white">login</span></a></label>
+				<label class="d-flex w-50"><a href="#" target=""><i class="material-icons text-white">person</i>
+					<label id="myAccLabel" class="headerLabels pe-3"><span class="text-white">my account</span></a></label>
+				</label>
+				<label id="langLabel" class="headerLabels d-flex w-50">
+					<figure class="d-flex w-">
+						<img id="headerEngFig" class="pe-1" src="" alt="usa flag">
+						<img id="headerPtbrFig" class="pe-1" src="" alt="brazil flag" style="display: none">
 					</figure>
-					<select id="selectLang" aria-label="select language">
-						<option selected>english</option>
-						<option>português - brasileiro</option>
+					<select id="selectLang" class="border-0 w-50 h-50 text-white bg-primary" aria-label="select language">
+						<option selected class="bg-light text-body">English</option>
+						<option class="bg-light text-body">Português - Brasileiro</option>
 					</select>
 				</label>
-				<label id="currencyLabel" class="headerLabels d-flex">
+				<label id="currencyLabel" class="headerLabels d-flex w-50">
 					<figure>
-						<img id="dolar" class="pe-3" src="#" alt="dolar currency icon">
-						<img id="real" class="pe-3" src="#" alt="reais currency icon" style="display: none">
+						<img id="dolar" class="pe-3" src="#" alt="currency">
+						<img id="real" class="pe-3" src="#" alt="currency" style="display: none">
 					</figure>
-					<select id="selectCurrency" aria-label="select currency">
-						<option selected>US Dollar</option>
-						<option>R$ Real</option>
+					<select id="selectCurrency" class="border-0 w-50 h-50 text-white bg-primary" aria-label="select currency">
+						<option class="bg-light text-body" selected>US Dollar</option>
+						<option class="bg-light text-body">BR Real</option>
 					</select>
 				</label>
 			</div>
