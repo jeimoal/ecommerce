@@ -45,26 +45,26 @@
 		</header>
 
 		<!--search container-->
-		<div id="searchCont" class="">
-			<figure id="companyLogo"><a href="#headerCont" target=""><img src="#" alt="company homepage"></a></figure>
-			<div id="searchBar">
-				<select id="searchSelect" aria-label="select category to search a product">
-					<option class="searchOpt" selected>all categories</option>
+		<div id="searchCont" class="container-fluid d-flex text-white bg-primary">
+			<figure id="companyLogo" class="w-25 my-auto"><a href="#headerCont" target="" class="w-50 h-50"><img src="#" alt="company homepage" class="w-50 h-50"></a></figure>
+			<div id="searchBar" class="w-50 d-flex">
+				<select id="searchSelect" aria-label="select category to search a product" class="px-3 h-75 border border-end-0">
+					<option class="searchOpt" selected>All categories</option>
 					<option class="searchOpt">category</option>
 					<option class="searchOpt">category</option>
 					<option class="searchOpt">category</option>
 					<option class="searchOpt">category</option>
 					<option class="searchOpt">category</option>
 				</select>
-				<input id="searchBar" type="text" placeholder="search">
-				<input id="searchBtn" type="button" value="search">
+				<input id="searchBar" type="text" placeholder="Search" class="px-3 w-75 h-75 border border-end-0 border-start-0">
+				<input id="searchBtn" type="button" value="Search" class="px-3 h-75 bg-warning border">
 			</div>
-			<div id="searchIcons">
-				<label aria-label="sort items"><i class="material-icons" role="button">swap_horiz</i></label>
-				<label aria-label="favorite page"><i class="material-icons" role="button">favorite_border</i></label>
-				<div id="shopCart">
-					<label aria-label="product cart"><i class="material-icons" role="button">local_mall</i></label>
-					<div id="shopTxt">
+			<div id="searchIcons" class="w-25 d-flex ms-3">
+				<label aria-label="sort items" class="w-25 p-3"><i class="material-icons" role="button">swap_horiz</i></label>
+				<label aria-label="favorite page" class="w-25 p-3"><i class="material-icons" role="button">favorite_border</i></label>
+				<div id="shopCart" class="d-flex w-50">
+					<label aria-label="product cart"><i class="material-icons bg-warning w-100 h-75 p-3" role="button">local_mall</i></label>
+					<div id="shopTxt" class="ms-3">
 						<p id="myCartTxt">my cart<p>
 						<span id="myCartItems">0 items - $0.00</span>
 					</div>
