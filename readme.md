@@ -1,3 +1,3 @@
-# E-commerce
+# E-commerce (W.I.P)
 
-Currently WIP
+Development of a e-commerce web page.
