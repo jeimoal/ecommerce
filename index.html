@@ -9,47 +9,51 @@
 	<link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
-	<div id="wrapper" class="col-12">
+	<div id="wrapper" class="row justify-content-center">
 		<!--header container-->
-		<header id="headerCont" class="row pt-2 px-5 text-white bg-primary">
-			<span id="headerTxt" class="col-md text-center pb-2">Get an extra 10% off or more on select hotels with Member Pricing. Join now, it's free!</span>
-			<div id="headerLogin" class="col-md d-flex justify-content-center align-items-center">
-				<label id="loginLabel" class="col-2 text-center"><a href="#" target=""><span class="text-white">Login</span></a></label>
-				<label class="col-4">
-					<a href="#" target="" class="d-flex justify-content-center">
+		<header id="headerCont" class="row bg-primary px-auto">
+			<span id="headerTxt" class="col-xl text-white text-center p-2">Get an extra 10% off or more on select hotels with Member Pricing. Join now, it's free!</span>
+			<div id="headerLogin" class="col-xl d-flex justify-content-center align-items-center p-2">
+				<label id="loginLabel" class="col-1">
+					<a href="#" target="">
+						<span class="text-white">Login</span>
+					</a>
+				</label>
+				<label class="col-3">
+					<a href="#" target="" class="d-flex justify-content-center align-items-center">
 						<i class="material-icons text-white">person</i>
 						<span class="text-white">my account</span>
 					</a>
 				</label>
-				<label id="langLabel" class="col-3 d-inline-flex justify-content-center">
-					<figure class="d-inline-flex">
+				<label id="langLabel" class="d-flex justify-content-center align-items-center">
+					<figure class="col-4">
 						<img id="headerEngFig" src="" alt="usa flag">
 						<img id="headerPtbrFig" src="" alt="brazil flag" style="display: none">
 					</figure>
-					<select id="selectLang" class="border-0 text-white bg-primary w-50" aria-label="select language">
-						<option selected class="bg-light text-body w-25">English</option>
-						<option class="bg-light text-body w-25">Português - Brasileiro</option>
+					<select id="selectLang" class="col-7 bg-primary text-white border-0" aria-label="select language">
+						<option selected class="bg-white text-body">English</option>
+						<option class="bg-white text-body">Brasileiro</option>
 					</select>
 				</label>
-				<label id="currencyLabel" class="col-3 d-flex justify-content-center">
-					<i class="material-icons">attach_money</i>
-					<select id="selectCurrency" class="border-0 w-50 text-white bg-primary" aria-label="select currency">
-						<option class="bg-light text-body" selected>US Dollar</option>
-						<option class="bg-light text-body">BR Real</option>
+				<label id="currencyLabel" class="col-2 d-flex justify-content-center align-items-center">
+					<i class="material-icons text-white">attach_money</i>
+					<select id="selectCurrency" class="bg-primary text-white border-0" aria-label="select currency">
+						<option class="bg-white text-body" selected>US Dollar</option>
+						<option class="bg-white text-body">BR Real</option>
 					</select>
 				</label>
 			</div>
 		</header>
 
 		<!--search container-->
-		<div id="searchCont" class="row text-white bg-primary pb-2 px-5">
-			<figure id="companyLogo" class="col my-auto">
-				<a href="#headerCont" target="" class="d-flex align-items-center justify-content-center">
+		<div id="searchCont" class="">
+			<figure id="companyLogo" class="">
+				<a href="#headerCont" target="" class="">
 					<img src="#" alt="company homepage" class="">
 				</a>
 			</figure>
-			<div id="searchBar" class="col d-flex align-items-center justify-content-center">
-				<select id="searchSelect" aria-label="select category to search a product" class="p-2 border border-end-0">
+			<div id="searchBar" class="">
+				<select id="searchSelect" aria-label="select category to search a product" class="">
 					<option class="searchOpt" selected>All categories</option>
 					<option class="searchOpt">category</option>
 					<option class="searchOpt">category</option>
@@ -57,17 +61,17 @@
 					<option class="searchOpt">category</option>
 					<option class="searchOpt">category</option>
 				</select>
-				<input id="searchBar" type="text" placeholder="Search" class="px-3 border border-end-0 border-start-0">
-				<input id="searchBtn" type="button" value="Search" class="px-3 bg-warning border">
+				<input id="searchBar" type="text" placeholder="Search" class="">
+				<input id="searchBtn" type="button" value="Search" class="">
 			</div>
-			<div id="searchIcons" class="col d-flex align-items-center justify-content-center ms-3">
-				<label aria-label="sort items" class="w-25"><i class="material-icons d-flex align-items-center justify-content-center" role="button">swap_horiz</i></label>
-				<label aria-label="favorite page" class=""><i class="material-icons d-flex align-items-center justify-content-center " role="button">favorite_border</i></label>
-				<div id="shopCart" class="d-flex align-items-center justify-content-center">
-					<label aria-label="product cart"><i class="material-icons bg-warning p-3" role="button">local_mall</i></label>
-					<div id="shopTxt" class="ms-3">
-						<p id="myCartTxt" class="mb-0">My cart</p>
-						<p id="myCartItems" class="mb-0">0 item(s) - $0.00</p>
+			<div id="searchIcons" class="">
+				<label aria-label="sort items" class=""><i class="material-icons" role="button">swap_horiz</i></label>
+				<label aria-label="favorite page" class=""><i class="material-icons" role="button">favorite_border</i></label>
+				<div id="shopCart" class="">
+					<label aria-label="product cart"><i class="material-icons" role="button">local_mall</i></label>
+					<div id="shopTxt" class="">
+						<p id="myCartTxt" class="">My cart</p>
+						<p id="myCartItems" class="">0 item(s) - $0.00</p>
 					</div>
 				</div>
 			</div>
