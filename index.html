@@ -26,7 +26,7 @@
 					</a>
 				</label>
 				<label id="langLabel" class="d-flex justify-content-center align-items-center">
-					<figure class="col-4">
+					<figure class="col-4 text-white">
 						<img id="headerEngFig" src="" alt="usa flag">
 						<img id="headerPtbrFig" src="" alt="brazil flag" style="display: none">
 					</figure>
@@ -46,14 +46,14 @@
 		</header>
 
 		<!--search container-->
-		<div id="searchCont" class="">
-			<figure id="companyLogo" class="">
-				<a href="#headerCont" target="" class="">
-					<img src="#" alt="company homepage" class="">
+		<div id="searchCont" class="d-flex justify-content-center align-items-center p-2 bg-primary">
+			<figure id="companyLogo" class="col">
+				<a href="#headerCont" target="" class="w-100 h-100">
+					<img src="#" alt="company homepage" class="text-white img-fluid">
 				</a>
 			</figure>
-			<div id="searchBar" class="">
-				<select id="searchSelect" aria-label="select category to search a product" class="">
+			<div id="searchBar" class="col">
+				<select id="searchSelect" aria-label="select category to search a product" class="col-12 p-1 my-1 rounded">
 					<option class="searchOpt" selected>All categories</option>
 					<option class="searchOpt">category</option>
 					<option class="searchOpt">category</option>
@@ -61,24 +61,26 @@
 					<option class="searchOpt">category</option>
 					<option class="searchOpt">category</option>
 				</select>
-				<input id="searchBar" type="text" placeholder="Search" class="">
-				<input id="searchBtn" type="button" value="Search" class="">
+				<input id="searchBar" type="text" placeholder="Search" class="col-12 p-1 my-1 rounded">
+				<input id="searchBtn" type="button" value="Search" class="col-12 p-1 my-1 bg-warning text-body rounded">
 			</div>
-			<div id="searchIcons" class="">
-				<label aria-label="sort items" class=""><i class="material-icons" role="button">swap_horiz</i></label>
-				<label aria-label="favorite page" class=""><i class="material-icons" role="button">favorite_border</i></label>
-				<div id="shopCart" class="">
-					<label aria-label="product cart"><i class="material-icons" role="button">local_mall</i></label>
-					<div id="shopTxt" class="">
-						<p id="myCartTxt" class="">My cart</p>
-						<p id="myCartItems" class="">0 item(s) - $0.00</p>
+			<div id="searchIcons" class="col row">
+				<label aria-label="sort items" class="col d-flex justify-content-center align-items-center"><i class="material-icons text-white" role="button">swap_horiz</i></label>
+				<label aria-label="favorite page" class="col d-flex justify-content-center align-items-center"><i class="material-icons text-white" role="button">favorite_border</i></label>
+				<div id="shopCart" class="col-md-6" role="button">
+					<div id="shopTxt" class="row">
+						<div class="d-flex justify-content-center align-items-center">
+							<i class="material-icons text-white pe-2">local_mall</i>
+							<p id="myCartTxt" class="text-white text-center d-inline-block m-0">My cart</p>
+						</div>
+						<p id="myCartItems" class="text-white text-center mb-0 mt-1">0 item(s) - $0.00</p>
 					</div>
 				</div>
 			</div>
 		</div>
 
 		<!--categories container-->
-		<div id="categoriesCont" class="d-flex align-items-center">
+		<div id="categoriesCont" class="p-2">
 			<div id="categoriesAll">
 				<select id="categSlct" aria-label="select a product category">
 					<option class="categOpt" selected>all categories</option>
@@ -91,7 +93,7 @@
 				</select>
 			</div>
 			<div id="categoriesEach">
-				<span class="categItems">home</span>
+				<span class="">home</span>
 				<select class="categItems" aria-label="select a feature">
 					<option class="categSlct" selected>features</option>
 					<option class="categSlct">feature 1</option>
@@ -100,7 +102,7 @@
 					<option class="categSlct">feature 4</option>
 					<option class="categSlct">feature 5</option>
 				</Select>
-				<select class="categItems" aria-label="select a collection">
+				<select class="" aria-label="select a collection">
 					<option class="categSlct" selected>collections</option>
 					<option class="categSlct">colection 1</option>
 					<option class="categSlct">colection 2</option>
@@ -108,7 +110,7 @@
 					<option class="categSlct">colection 4</option>
 					<option class="categSlct">colection 5</option>
 				</Select>
-				<select class="categItems" aria-label="select an accessorie">
+				<select class="" aria-label="select an accessorie">
 					<option class="categSlct" selected>accessories</option>
 					<option class="categSlct">accessorie 1</option>
 					<option class="categSlct">accessorie 2</option>
@@ -116,7 +118,7 @@
 					<option class="categSlct">accessorie 4</option>
 					<option class="categSlct">accessorie 5</option>
 				</Select>
-				<select class="categItems" aria-label="select a page">
+				<select class="" aria-label="select a page">
 					<option class="categSlct" selected>pages</option>
 					<option class="categSlct">page 1</option>
 					<option class="categSlct">page 2</option>
@@ -124,19 +126,19 @@
 					<option class="categSlct">page 4</option>
 					<option class="categSlct">page 5</option>
 				</Select>
-				<span class="categItems">blog</span>
+				<span class="">blog</span>
 			</div>
 
 			<div id="categoriesPromo">
-				<button class="promoItems">today deals</button>
-				<button class="promoItems">buy this theme</button>
+				<button class="">today deals</button>
+				<button class="">buy this theme</button>
 				<i class="material-icons">messenger</i>
 				<span id="hotItems">hot</span>
 			</div>
 		</div>
 
 		<!--promo container-->
-		<main>
+		<main class="p-2">
 			<div id="sldShowCont">
 				<div class="slides">
 					<img src="#" alt="image of a product on sale">
@@ -179,42 +181,42 @@
 		</main>
 
 		<!--advantages container-->
-		<div id="advantagesCont" class="">
+		<div id="advantagesCont" class="p-2">
 			<div class="advItems">
-				<img src="#" class="advIcons" alt="">
-				<div class="advTtx" aria-label="delivery">
+				<img src="#" class="" alt="">
+				<div class="" aria-label="delivery">
 					<p>free delivery</p>
 					<p>from $59,89</p>
 				</div>
 			</div>
 
 			<div class="advItems">
-				<img src="#" class="advIcons" alt="">
-				<div class="advTtx" aria-label="support">
+				<img src="#" class="" alt="">
+				<div class="" aria-label="support">
 					<p>support 24/7</p>
 					<p>online 24 hours</p>
 				</div>
 			</div>
 
 			<div class="advItems">
-				<img src="#" class="advIcons" alt="">
-				<div class="advTtx" aria-label="return">
+				<img src="#" class="" alt="">
+				<div class="" aria-label="return">
 					<p>free return</p>
 					<p>365 a day</p>
 				</div>
 			</div>
 
 			<div class="advItems">
-				<img src="#" class="advIcons" alt="">
-				<div class="advTtx" aria-label="payment">
+				<img src="#" class="" alt="">
+				<div class="" aria-label="payment">
 					<p>payment method</p>
 					<p>secure payment</p>
 				</div>
 			</div>
 
 			<div class="advItems">
-				<img src="#" class="advIcons" alt="">
-				<div class="advTtx" aria-label="saving">
+				<img src="#" class="" alt="">
+				<div class="" aria-label="saving">
 					<p>big saving</p>
 					<p>weeken sales</p>
 				</div>
@@ -223,11 +225,11 @@
 		</div>
 
 		<!--round categories container-->
-		<div id="roundCategCont" class="">
+		<div id="roundCategCont" class="p-2">
 			<a href="#" target="">
-				<figure class="rCateg">
+				<figure class="">
 					<img src="#" alt="">
-					<figcaption class="rCategCaption">digital</figcaption>
+					<figcaption class="">digital</figcaption>
 				</figure>
 			</a>
 
@@ -269,7 +271,7 @@
 		</div>
 
 		<!--side container-->
-		<div id="sideCont" class="">
+		<div id="sideCont" class="p-2">
 			<div id="qrCodeCont" class="">
 				<img src="#" alt="">
 				<div id="qrCodeTxtCont">
@@ -364,7 +366,7 @@
 		</div>
 
 		<!--hot deal container-->
-		<div id="hotDealCont" class="">
+		<div id="hotDealCont" class="p-2">
 			<div id="hotDealTxtCont" class="">
 				<label id="hotDealLbl">
 					<i class="material-icons">whatshot</i>
@@ -457,12 +459,12 @@
 		</div>
 
 		<!--promotional banner container-->
-		<div id="promoBannerCont" class="">
+		<div id="promoBannerCont" class="p-2">
 			<img src="#" alt="banner with a promotional image. 50% discount guaranted on some items">
 		</div>
 
 		<!--variety container-->
-		<div id="varietyCont" class="">
+		<div id="varietyCont" class="p-2">
 			<div id="variCont" class="">
 				<label id="variLbl">
 					<i class="material-icons">shirt</i>
@@ -1387,7 +1389,7 @@
 		</div>
 
 		<!--footer-->
-		<footer>
+		<footer class="p-2">
 			<p>desenvolvido por <a href="https://jeimoal.github.io/portifolio/">Jeison Moura</a></p>
 		</footer>
 	</div>
