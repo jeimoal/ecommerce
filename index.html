@@ -9,7 +9,7 @@
 	<link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
-	<div id="wrapper" class="row justify-content-center">
+	<div id="wrapper" class="row justify-content-center mx-auto">
 		<!--header container-->
 		<header id="headerCont" class="row bg-primary px-auto">
 			<span id="headerTxt" class="col-xl text-white text-center my-auto p-2">Get an extra 10% off or more on select hotels with Member Pricing. Join now, it's free!</span>
@@ -47,13 +47,13 @@
 
 		<!--search container-->
 		<div id="searchCont" class="d-flex justify-content-center align-items-center p-2 bg-primary">
-			<figure id="companyLogo" class="col pe-1">
+			<figure id="companyLogo" class="col-lg-3 navbar-brand pe-1 me-3">
 				<a href="#headerCont" target="" class="w-100 h-100">
 					<img src="#" alt="company homepage" class="text-white img-fluid">
 				</a>
 			</figure>
-			<div id="searchBar" class="col pe-1">
-				<select id="searchSelect" aria-label="select category to search a product" class="col-12 p-1 my-1 rounded">
+			<div id="searchBar" class="row col-lg mx-auto">
+				<select id="searchSelect" aria-label="select category to search a product" class="col-lg p-1 my-1 w-100 border-0">
 					<option class="searchOpt" selected>All categories</option>
 					<option class="searchOpt">category</option>
 					<option class="searchOpt">category</option>
@@ -61,10 +61,10 @@
 					<option class="searchOpt">category</option>
 					<option class="searchOpt">category</option>
 				</select>
-				<input id="searchBar" type="text" placeholder="Search" class="col-12 p-1 my-1 rounded">
-				<input id="searchBtn" type="button" value="Search" class="col-12 p-1 my-1 bg-warning text-body rounded">
+				<input id="searchBar" type="text" placeholder="Search" class="col-lg p-1 my-1 border-0">
+				<input id="searchBtn" type="button" value="Search" class="col-lg p-1 my-1 bg-warning text-body border-0">
 			</div>
-			<div id="searchIcons" class="col row pe-1">
+			<div id="searchIcons" class="row col-md-3 pe-1 d-flex justify-content-center">
 				<label aria-label="sort items" class="col d-flex justify-content-center align-items-center mb-sm-1"><i class="material-icons text-white" role="button">swap_horiz</i></label>
 				<label aria-label="favorite page" class="col d-flex justify-content-center align-items-center mb-sm-1"><i class="material-icons text-white" role="button">favorite_border</i></label>
 				<div id="shopCart" class="col-md-6 mb-sm-1" role="button">
@@ -80,60 +80,66 @@
 		</div>
 
 		<!--categories container-->
-		<div id="categoriesCont" class="p-2">
-			<div id="categoriesAll">
-				<select id="categSlct" aria-label="select a product category">
-					<option class="categOpt" selected>all categories</option>
-					<option class="categOpt">categorie 1</option>
-					<option class="categOpt">categorie 2</option>
-					<option class="categOpt">categorie 3</option>
-					<option class="categOpt">categorie 4</option>
-					<option class="categOpt">categorie 5</option>
-					<option class="categOpt">categorie 6</option>
+		<div id="categoriesCont" class="row justify-content-center p-2 bg-primary">
+			<div id="categoriesAll" class="col-lg d-flex justify-content-center">
+				<select id="categSlct" class="rounded my-1 p-1 border-0 text-capitalize text-white bg-primary" aria-label="select a product category" role="button">
+					<option class="bg-white text-body" selected>all categories</option>
+					<option class="bg-white text-body">categorie 1</option>
+					<option class="bg-white text-body">categorie 2</option>
+					<option class="bg-white text-body">categorie 3</option>
+					<option class="bg-white text-body">categorie 4</option>
+					<option class="bg-white text-body">categorie 5</option>
+					<option class="bg-white text-body">categorie 6</option>
 				</select>
 			</div>
-			<div id="categoriesEach">
-				<span class="">home</span>
-				<select class="categItems" aria-label="select a feature">
-					<option class="categSlct" selected>features</option>
-					<option class="categSlct">feature 1</option>
-					<option class="categSlct">feature 2</option>
-					<option class="categSlct">feature 3</option>
-					<option class="categSlct">feature 4</option>
-					<option class="categSlct">feature 5</option>
+			<div id="categoriesEach" class="col-lg-6 text-capitalize d-flex justify-content-center align-items-center">
+				<span class="rounded my-1 p-1 text-white" role="button">home</span>
+				<select class="text-capitalize text-white rounded my-1 p-1 bg-primary border-0" aria-label="select a feature" role="button">
+					<option class="bg-white text-body" selected>features</option>
+					<option class="bg-white text-body">feature 1</option>
+					<option class="bg-white text-body">feature 2</option>
+					<option class="bg-white text-body">feature 3</option>
+					<option class="bg-white text-body">feature 4</option>
+					<option class="bg-white text-body">feature 5</option>
 				</Select>
-				<select class="" aria-label="select a collection">
-					<option class="categSlct" selected>collections</option>
-					<option class="categSlct">colection 1</option>
-					<option class="categSlct">colection 2</option>
-					<option class="categSlct">colection 3</option>
-					<option class="categSlct">colection 4</option>
-					<option class="categSlct">colection 5</option>
+				<select class="rounded my-1 p-1 text-capitalize text-white bg-primary border-0" aria-label="select a collection" role="button">
+					<option class="bg-white text-body" selected>collections</option>
+					<option class="bg-white text-body">colection 1</option>
+					<option class="bg-white text-body">colection 2</option>
+					<option class="bg-white text-body">colection 3</option>
+					<option class="bg-white text-body">colection 4</option>
+					<option class="bg-white text-body">colection 5</option>
 				</Select>
-				<select class="" aria-label="select an accessorie">
-					<option class="categSlct" selected>accessories</option>
-					<option class="categSlct">accessorie 1</option>
-					<option class="categSlct">accessorie 2</option>
-					<option class="categSlct">accessorie 3</option>
-					<option class="categSlct">accessorie 4</option>
-					<option class="categSlct">accessorie 5</option>
+				<select class="rounded my-1 p-1 text-capitalize text-white bg-primary border-0" aria-label="select an accessorie" role="button">
+					<option class="bg-white text-body" selected>accessories</option>
+					<option class="bg-white text-body">accessorie 1</option>
+					<option class="bg-white text-body">accessorie 2</option>
+					<option class="bg-white text-body">accessorie 3</option>
+					<option class="bg-white text-body">accessorie 4</option>
+					<option class="bg-white text-body">accessorie 5</option>
 				</Select>
-				<select class="" aria-label="select a page">
-					<option class="categSlct" selected>pages</option>
-					<option class="categSlct">page 1</option>
-					<option class="categSlct">page 2</option>
-					<option class="categSlct">page 3</option>
-					<option class="categSlct">page 4</option>
-					<option class="categSlct">page 5</option>
+				<select class="rounded my-1 p-1 text-capitalize text-white bg-primary border-0" aria-label="select a page" role="button">
+					<option class="bg-white text-body" selected>pages</option>
+					<option class="bg-white text-body">page 1</option>
+					<option class="bg-white text-body">page 2</option>
+					<option class="bg-white text-body">page 3</option>
+					<option class="bg-white text-body">page 4</option>
+					<option class="bg-white text-body">page 5</option>
 				</Select>
-				<span class="">blog</span>
+				<span class="rounded my-1 p-1 text-white bg-primary" role="button">blog</span>
 			</div>
 
-			<div id="categoriesPromo">
-				<button class="">today deals</button>
-				<button class="">buy this theme</button>
-				<i class="material-icons">messenger</i>
-				<span id="hotItems">hot</span>
+			<div id="categoriesPromo" class="col-lg position-relative d-flex justify-content-center">
+				<button class="mx-1 p-1 text-white bg-primary border-0 text-capitalize" role="button">today deals</button>
+				<button class="mx-1 p-1 text-white bg-primary border-0 text-capitalize" role="button">buy this theme</button>
+				<div class="position-relative">
+					<div class="position-absolute" style="top:-1vh; right:0">
+						<div class="row position-relative">
+							<span id="hotItems" class="d-inline-block text-body m-1" style="z-index:1">Hot</span>
+							<i class="material-icons text-warning position-absolute" style="font-size:2.2rem">messenger</i>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 
