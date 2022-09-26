@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+	<script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
 	<title>Best e-commerce page ever</title>
 	<link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
@@ -13,7 +14,7 @@
 		<!--header container-->
 		<header id="headerCont" class="row bg-primary px-auto">
 			<span id="headerTxt" class="col-xl text-white text-center my-auto p-2">Get an extra 10% off or more on select hotels with Member Pricing. Join now, it's free!</span>
-			<div id="headerLogin" class="col-xl d-flex justify-content-center align-items-center p-2">
+			<div id="headerLogin" class="col-xl p-2 d-flex justify-content-center align-items-center">
 				<label id="loginLabel" class="col-1">
 					<a href="#" target="">
 						<span class="text-white">Login</span>
@@ -46,28 +47,28 @@
 		</header>
 
 		<!--search container-->
-		<div id="searchCont" class="d-flex justify-content-center align-items-center p-2 bg-primary">
-			<figure id="companyLogo" class="col-lg-3 navbar-brand pe-1 me-3">
-				<a href="#headerCont" target="" class="w-100 h-100">
-					<img src="#" alt="company homepage" class="text-white img-fluid">
+		<div id="searchCont" class="p-2 bg-primary d-flex justify-content-center align-items-center">
+			<div class="col-lg-3">
+				<a href="#headerCont" target="" class="d-flex justify-content-center align-items-center">
+					<h1 alt="company homepage" class="text-white text-uppercase text-center">top deal</h1>
 				</a>
-			</figure>
+			</div>
 			<div id="searchBar" class="row col-lg mx-auto">
-				<select id="searchSelect" aria-label="select category to search a product" class="col-lg p-1 my-1 w-100 border-0">
-					<option class="searchOpt" selected>All categories</option>
-					<option class="searchOpt">category</option>
-					<option class="searchOpt">category</option>
-					<option class="searchOpt">category</option>
-					<option class="searchOpt">category</option>
-					<option class="searchOpt">category</option>
+				<select id="searchSelect" aria-label="select category to search a product" class="col-lg p-1 my-1 w-100 border-0 text-capitalize">
+					<option class="text-body bg-white" selected>all categories</option>
+					<option class="text-body bg-white">category</option>
+					<option class="text-body bg-white">category</option>
+					<option class="text-body bg-white">category</option>
+					<option class="text-body bg-white">category</option>
+					<option class="text-body bg-white">category</option>
 				</select>
 				<input id="searchBar" type="text" placeholder="Search" class="col-lg p-1 my-1 border-0">
 				<input id="searchBtn" type="button" value="Search" class="col-lg p-1 my-1 bg-warning text-body border-0">
 			</div>
-			<div id="searchIcons" class="row col-md-3 pe-1 d-flex justify-content-center">
+			<div id="searchIcons" class="row col-md-3 w-25 pe-1 d-flex justify-content-center">
 				<label aria-label="sort items" class="col d-flex justify-content-center align-items-center mb-sm-1"><i class="material-icons text-white" role="button">swap_horiz</i></label>
 				<label aria-label="favorite page" class="col d-flex justify-content-center align-items-center mb-sm-1"><i class="material-icons text-white" role="button">favorite_border</i></label>
-				<div id="shopCart" class="col-md-6 mb-sm-1" role="button">
+				<div id="shopCart" class="col-lg-6 mb-sm-1" role="button">
 					<div id="shopTxt" class="row">
 						<div class="d-flex justify-content-center align-items-center">
 							<i class="material-icons text-white pe-2">local_mall</i>
@@ -133,7 +134,7 @@
 				<button class="mx-1 p-1 text-white bg-primary border-0 text-capitalize" role="button">today deals</button>
 				<button class="mx-1 p-1 text-white bg-primary border-0 text-capitalize" role="button">buy this theme</button>
 				<div class="position-relative">
-					<div class="position-absolute" style="top:-1vh; right:0">
+					<div class="position-absolute" style="top:-1.5vh; right:0">
 						<div class="row position-relative">
 							<span id="hotItems" class="d-inline-block text-body m-1" style="z-index:1">Hot</span>
 							<i class="material-icons text-warning position-absolute" style="font-size:2.2rem">messenger</i>
@@ -144,45 +145,48 @@
 		</div>
 
 		<!--promo container-->
-		<main class="p-2">
-			<div id="sldShowCont">
-				<div class="slides">
-					<img src="#" alt="image of a product on sale">
+		<main class="position-relative row">
+			<div id="carousel" class="p-2 carousel slide col-md-8" data-bs-ride="carousel">
+				<div id="dots" class="carousel-indicators">
+					<button data-bs-target="#carousel" data-bs-slide-to="0" class="active"><i class="material-icons dots">panorama_fish_eye</i></button>
+					<button data-bs-target="#carousel" data-bs-slide-to="1" class="active"><i class="material-icons dots">panorama_fish_eye</i></button>
+					<button data-bs-target="#carousel" data-bs-slide-to="2" class="active"><i class="material-icons dots">panorama_fish_eye</i></button>
+					<button data-bs-target="#carousel" data-bs-slide-to="3" class="active"><i class="material-icons dots">panorama_fish_eye</i></button>
 				</div>
 
-				<div class="slides">
-					<img src="#" alt="image of a product on sale">
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<img src="_img/sale.jfif" alt="image of a product on sale" class="d-block w-100">
+					</div>
+	
+					<div class="carousel-item active">
+						<img src="_img/sale.jfif" alt="image of a product on sale" class="d-block w-100">
+					</div>
+	
+					<div class="carousel-item active">
+						<img src="_img/sale.jfif" alt="image of a product on sale" class="d-block w-100">
+					</div>
+
+					<div class="carousel-item active">
+						<img src="_img/sale.jfif" alt="image of a product on sale" class="d-block w-100">
+					</div>
 				</div>
 
-				<div class="slides">
-					<img src="#" alt="image of a product on sale">
-				</div>
-
-				<div class="slides">
-					<img src="#" alt="image of a product on sale">
-				</div>
-
-				<div id="dots">
-					<i class="material-icons dots">panorama_fish_eye</i>
-					<i class="material-icons dots">panorama_fish_eye</i>
-					<i class="material-icons dots">panorama_fish_eye</i>
-					<i class="material-icons dots">panorama_fish_eye</i>
-				</div>
+				<button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+					<span class="carousel-control-prev-icon"></span>
+				</button>
+				<button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+					<span class="carousel-control-next-icon"></span>
+				</button>
 			</div>
 
-			<div class="miniPromo">
-				<img src="#" alt="image of a product on sale">
-				<img src="#" alt="image of a product on sale">
-				<img src="#" alt="image of a product on sale">
-				<img src="#" alt="image of a product on sale">
-				<img src="#" alt="image of a product on sale">
-				<img src="#" alt="image of a product on sale">
-			</div>
-
-			<div class="socialMedia">
-				<img src="#" alt="share on facebook">
-				<img src="#" alt="share on twitter">
-				<img src="#" alt="e-commerce youtube page">
+			<div class="miniPromo row col">
+				<img src="_img/sale.jfif" class="w-50 p-2" alt="image of a product on sale" role="button">
+				<img src="_img/sale.jfif" class="w-50 p-2" alt="image of a product on sale" role="button">
+				<img src="_img/sale.jfif" class="w-50 p-2" alt="image of a product on sale" role="button">
+				<img src="_img/sale.jfif" class="w-50 p-2" alt="image of a product on sale" role="button">
+				<img src="_img/sale.jfif" class="w-50 p-2" alt="image of a product on sale" role="button">
+				<img src="_img/sale.jfif" class="w-50 p-2" alt="image of a product on sale" role="button">
 			</div>
 		</main>
 
