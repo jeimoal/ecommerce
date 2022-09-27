@@ -10,7 +10,7 @@
 	<link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
-	<div id="wrapper" class="row justify-content-center mx-auto">
+	<div id="wrapper" class="row justify-content-center">
 		<!--header container-->
 		<header id="headerCont" class="row bg-primary px-auto">
 			<span id="headerTxt" class="col-xl text-white text-center my-auto p-2">Get an extra 10% off or more on select hotels with Member Pricing. Join now, it's free!</span>
@@ -23,15 +23,15 @@
 				<label class="col">
 					<a href="#" target="" class="d-flex justify-content-center align-items-center">
 						<i class="material-icons text-white">person</i>
-						<span class="text-white ms-1">my account</span>
+						<span class="text-white text-center ms-1">my account</span>
 					</a>
 				</label>
 				<label id="langLabel" class="d-flex justify-content-center align-items-center ms-1">
-					<figure class="col-4 text-white mb-0">
+					<figure class="col text-white mb-0">
 						<img id="headerEngFig" src="" alt="usa flag">
 						<img id="headerPtbrFig" src="" alt="brazil flag" style="display: none">
 					</figure>
-					<select id="selectLang" class="col-7 bg-primary text-white border-0" aria-label="select language">
+					<select id="selectLang" class="col bg-primary text-white border-0" aria-label="select language">
 						<option selected class="bg-white text-body">English</option>
 						<option class="bg-white text-body">Brasileiro</option>
 					</select>
@@ -53,8 +53,8 @@
 					<h1 alt="company homepage" class="text-white text-uppercase text-center">top deal</h1>
 				</a>
 			</div>
-			<div id="searchBar" class="row col-lg mx-auto">
-				<select id="searchSelect" aria-label="select category to search a product" class="col-lg p-1 my-1 w-100 border-0 text-capitalize">
+			<div id="searchBar" class="row col-xxl-6 mx-auto">
+				<select id="searchSelect" aria-label="select category to search a product" class="col-lg-3 p-1 my-1 border-0 text-capitalize">
 					<option class="text-body bg-white" selected>all categories</option>
 					<option class="text-body bg-white">category</option>
 					<option class="text-body bg-white">category</option>
@@ -63,18 +63,18 @@
 					<option class="text-body bg-white">category</option>
 				</select>
 				<input id="searchBar" type="text" placeholder="Search" class="col-lg p-1 my-1 border-0">
-				<input id="searchBtn" type="button" value="Search" class="col-lg p-1 my-1 bg-warning text-body border-0">
+				<input id="searchBtn" type="button" value="Search" class="col-lg-3 p-1 my-1 bg-warning text-body border-0">
 			</div>
 			<div id="searchIcons" class="row col pe-1 d-flex justify-content-center mt-2">
 				<label aria-label="sort items" class="col d-flex justify-content-center align-items-center mb-sm-1"><i class="material-icons text-white" role="button">swap_horiz</i></label>
 				<label aria-label="favorite page" class="col d-flex justify-content-center align-items-center mb-sm-1"><i class="material-icons text-white" role="button">favorite_border</i></label>
 				<div id="shopCart" class="col mb-sm-1" role="button">
-					<div id="shopTxt" class="row">
-						<div class="d-flex justify-content-center align-items-center">
-							<i class="material-icons text-white pe-2">local_mall</i>
-							<p id="myCartTxt" class="text-white text-center d-inline-block m-0">My cart</p>
+					<div id="shopTxt" class="d-flex justify-content-center align-items-center">
+						<i class="material-icons text-white me-1">local_mall</i>
+						<div class="text-center">
+							<p id="myCartTxt" class="text-white text-center d-inline-block mb-0">My cart</p>
+							<p id="myCartItems" class="text-white text-center mt-1">0 item(s) - $0.00</p>
 						</div>
-						<p id="myCartItems" class="text-white text-center mb-0 mt-1">0 item(s) - $0.00</p>
 					</div>
 				</div>
 			</div>
@@ -235,45 +235,45 @@
 		</div>
 
 		<!--round categories container-->
-		<div id="roundCategCont" class="row p-2 mt-md-3">
-			<a href="#" target="" class="col-2 d-flex justify-content-center align-items-center">
+		<div id="roundCategCont" class="d-flex p-2 mt-md-3 justify-content-evenly" style="flex-wrap: wrap">
+			<a href="#" target="" class="d-flex justify-content-center align-items-center">
 				<figure class="position-relative border border-2 rounded-circle" style="overflow: hidden">
-					<img src="_img/categ.jfif" alt="" class="img-fluid rounded-circle">
+					<img src="_img/categ.jfif" alt="" class="rounded-circle img-fluid">
 					<figcaption class="w-100 bg-white text-center text-uppercase text-body position-absolute" style="bottom:1.5em">digital</figcaption>
 				</figure>
 			</a>
 
-			<a href="#" target="" class="col-2 d-flex justify-content-center align-items-center">
+			<a href="#" target="" class="d-flex justify-content-center align-items-center">
 				<figure class="position-relative border border-2 rounded-circle" style="overflow: hidden">
-					<img src="_img/categ.jfif" alt="" class="img-fluid rounded-circle">
+					<img src="_img/categ.jfif" alt="" class="rounded-circle img-fluid">
 					<figcaption class="w-100 bg-white text-center text-uppercase text-body position-absolute" style="bottom:1.5em">fashion</figcaption>
 				</figure>
 			</a>
 
-			<a href="#" target="" class="col-2 d-flex justify-content-center align-items-center">
+			<a href="#" target="" class="d-flex justify-content-center align-items-center">
 				<figure class="position-relative border border-2 rounded-circle" style="overflow: hidden">
-					<img src="_img/categ.jfif" alt="" class="img-fluid rounded-circle">
+					<img src="_img/categ.jfif" alt="" class="rounded-circle img-fluid">
 					<figcaption class="w-100 bg-white text-center text-uppercase text-body position-absolute" style="bottom:1.5em">food</figcaption>
 				</figure>
 			</a>
 
-			<a href="#" target="" class="col-2 d-flex justify-content-center align-items-center">
+			<a href="#" target="" class="d-flex justify-content-center align-items-center">
 				<figure class="position-relative border border-2 rounded-circle" style="overflow: hidden">
-					<img src="_img/categ.jfif" alt="" class="img-fluid rounded-circle">
+					<img src="_img/categ.jfif" alt="" class="rounded-circle img-fluid">
 					<figcaption class="w-100 bg-white text-center text-uppercase text-body position-absolute" style="bottom:1.5em">health</figcaption>
 				</figure>
 			</a>
 
-			<a href="#" target="" class="col-2 d-flex justify-content-center align-items-center">
+			<a href="#" target="" class="d-flex justify-content-center align-items-center">
 				<figure class="position-relative border border-2 rounded-circle" style="overflow: hidden">
-					<img src="_img/categ.jfif" alt="" class="img-fluid rounded-circle">
+					<img src="_img/categ.jfif" alt="" class="rounded-circle img-fluid">
 					<figcaption class="w-100 bg-white text-center text-uppercase text-body position-absolute" style="bottom:1.5em">spa</figcaption>
 				</figure>
 			</a>
 
-			<a href="#" target="" class="col-2 d-flex justify-content-center align-items-center">
+			<a href="#" target="" class="d-flex justify-content-center align-items-center">
 				<figure class="position-relative border border-2 rounded-circle" style="overflow: hidden">
-					<img src="_img/categ.jfif" alt="" class="img-fluid rounded-circle">
+					<img src="_img/categ.jfif" alt="" class="rounded-circle img-fluid">
 					<figcaption class="w-100 bg-white text-center text-uppercase text-body position-absolute" style="bottom:1.5em">travel</figcaption>
 				</figure>
 			</a>
