@@ -10,12 +10,12 @@
 	<link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
-	<div id="wrapper" class="row justify-content-center">
+	<div class="row justify-content-center">
 		<!--header container-->
-		<header id="headerCont" class="row bg-primary px-auto">
-			<span id="headerTxt" class="col-xl text-white text-center my-auto p-2">Get an extra 10% off or more on select hotels with Member Pricing. Join now, it's free!</span>
-			<div id="headerLogin" class="col-xl p-2 d-flex justify-content-center align-items-center" style="flex-wrap:wrap">
-				<label id="loginLabel" class="col d-flex justify-content-center">
+		<header class="row bg-primary px-auto">
+			<span class="col-xl text-white text-center my-auto p-2">Get an extra 10% off or more on select hotels with Member Pricing. Join now, it's free!</span>
+			<div class="col-xl p-2 d-flex justify-content-center align-items-center" style="flex-wrap:wrap">
+				<label class="col d-flex justify-content-center">
 					<a href="#" target="">
 						<span class="text-white">Login</span>
 					</a>
@@ -26,19 +26,19 @@
 						<span class="text-white text-center ms-1">my account</span>
 					</a>
 				</label>
-				<label id="langLabel" class="d-flex justify-content-center align-items-center ms-1">
+				<label class="d-flex justify-content-center align-items-center ms-1">
 					<figure class="col text-white mb-0">
-						<img id="headerEngFig" src="" alt="usa flag">
-						<img id="headerPtbrFig" src="" alt="brazil flag" style="display: none">
+						<img src="" alt="usa flag">
+						<img src="" alt="brazil flag" style="display: none">
 					</figure>
-					<select id="selectLang" class="col bg-primary text-white border-0" aria-label="select language">
+					<select class="col bg-primary text-white border-0" aria-label="select language">
 						<option selected class="bg-white text-body">English</option>
 						<option class="bg-white text-body">Brasileiro</option>
 					</select>
 				</label>
-				<label id="currencyLabel" class="col d-flex justify-content-center align-items-center mt-1">
+				<label class="col d-flex justify-content-center align-items-center mt-1">
 					<i class="material-icons text-white">attach_money</i>
-					<select id="selectCurrency" class="bg-primary text-white border-0" aria-label="select currency">
+					<select class="bg-primary text-white border-0" aria-label="select currency">
 						<option class="bg-white text-body" selected>US Dollar</option>
 						<option class="bg-white text-body">BR Real</option>
 					</select>
@@ -47,14 +47,14 @@
 		</header>
 
 		<!--search container-->
-		<div id="searchCont" class="row p-2 bg-primary d-flex justify-content-center align-items-center">
+		<div class="row p-2 bg-primary d-flex justify-content-center align-items-center">
 			<div class="col-lg-3">
 				<a href="#headerCont" target="" class="d-flex justify-content-center align-items-center">
 					<h1 alt="company homepage" class="text-white text-uppercase text-center">top deal</h1>
 				</a>
 			</div>
-			<div id="searchBar" class="row col-xxl-6 mx-auto">
-				<select id="searchSelect" aria-label="select category to search a product" class="col-lg-3 p-1 my-1 border-0 text-capitalize">
+			<div class="row col-xxl-6 mx-auto">
+				<select aria-label="select category to search a product" class="col-lg-3 p-1 my-1 border-0 text-capitalize">
 					<option class="text-body bg-white" selected>all categories</option>
 					<option class="text-body bg-white">category</option>
 					<option class="text-body bg-white">category</option>
@@ -62,18 +62,22 @@
 					<option class="text-body bg-white">category</option>
 					<option class="text-body bg-white">category</option>
 				</select>
-				<input id="searchBar" type="text" placeholder="Search" class="col-lg p-1 my-1 border-0">
-				<input id="searchBtn" type="button" value="Search" class="col-lg-3 p-1 my-1 bg-warning text-body border-0">
+				<input type="text" placeholder="Search" class="col-lg p-1 my-1 border-0">
+				<input type="button" value="Search" class="col-lg-3 p-1 my-1 bg-warning text-body border-0">
 			</div>
-			<div id="searchIcons" class="row col pe-1 d-flex justify-content-center mt-2">
-				<label aria-label="sort items" class="col d-flex justify-content-center align-items-center mb-sm-1"><i class="material-icons text-white" role="button">swap_horiz</i></label>
-				<label aria-label="favorite page" class="col d-flex justify-content-center align-items-center mb-sm-1"><i class="material-icons text-white" role="button">favorite_border</i></label>
-				<div id="shopCart" class="col mb-sm-1" role="button">
-					<div id="shopTxt" class="d-flex justify-content-center align-items-center">
+			<div class="row col pe-1 d-flex justify-content-center mt-2">
+				<label aria-label="sort items" class="col d-flex justify-content-center align-items-center mb-sm-1">
+					<i class="material-icons text-white" role="button">swap_horiz</i>
+				</label>
+				<label aria-label="favorite page" class="col d-flex justify-content-center align-items-center mb-sm-1">
+					<i class="material-icons text-white" role="button">favorite_border</i>
+				</label>
+				<div class="col mb-sm-1" role="button">
+					<div class="d-flex justify-content-center align-items-center">
 						<i class="material-icons text-white me-1">local_mall</i>
 						<div class="text-center">
-							<p id="myCartTxt" class="text-white text-center d-inline-block mb-0">My cart</p>
-							<p id="myCartItems" class="text-white text-center mt-1">0 item(s) - $0.00</p>
+							<p class="text-white text-center d-inline-block mb-0">My cart</p>
+							<p class="text-white text-center mt-1">0 item(s) - $0.00</p>
 						</div>
 					</div>
 				</div>
@@ -81,9 +85,9 @@
 		</div>
 
 		<!--categories container-->
-		<div id="categoriesCont" class="row justify-content-center p-2 bg-primary">
-			<div id="categoriesAll" class="col-lg d-flex justify-content-center">
-				<select id="categSlct" class="rounded my-1 p-1 border-0 text-capitalize text-white bg-primary" aria-label="select a product category" role="button">
+		<div class="row justify-content-center p-2 bg-primary">
+			<div class="col-lg d-flex justify-content-center">
+				<select class="rounded my-1 p-1 border-0 text-capitalize text-white bg-primary" aria-label="select a product category" role="button">
 					<option class="bg-white text-body" selected>all categories</option>
 					<option class="bg-white text-body">categorie 1</option>
 					<option class="bg-white text-body">categorie 2</option>
@@ -93,7 +97,7 @@
 					<option class="bg-white text-body">categorie 6</option>
 				</select>
 			</div>
-			<div id="categoriesEach" class="col-lg-6 text-capitalize d-flex justify-content-center align-items-center" style="flex-wrap:wrap">
+			<div class="col-lg-6 text-capitalize d-flex justify-content-center align-items-center" style="flex-wrap:wrap">
 				<span class="rounded my-1 p-1 text-white" role="button">home</span>
 				<select class="text-capitalize text-white rounded my-1 p-1 bg-primary border-0" aria-label="select a feature" role="button">
 					<option class="bg-white text-body" selected>features</option>
@@ -111,7 +115,7 @@
 					<option class="bg-white text-body">colection 4</option>
 					<option class="bg-white text-body">colection 5</option>
 				</Select>
-				<select class="rounded my-1 p-1 text-capitalize text-white bg-primary border-0" aria-label="select an accessorie" role="button">
+				<select class="rounded my-1 p-1 text-capitalize text-white bg-primary border-0" aria-label="select an accessory" role="button">
 					<option class="bg-white text-body" selected>accessories</option>
 					<option class="bg-white text-body">accessorie 1</option>
 					<option class="bg-white text-body">accessorie 2</option>
@@ -130,13 +134,13 @@
 				<span class="rounded my-1 p-1 text-white bg-primary" role="button">blog</span>
 			</div>
 
-			<div id="categoriesPromo" class="col-lg position-relative d-flex justify-content-center">
+			<div class="col-lg position-relative d-flex justify-content-center">
 				<button class="mx-1 p-1 text-white bg-primary border-0 text-capitalize" role="button">today deals</button>
 				<button class="mx-1 p-1 text-white bg-primary border-0 text-capitalize" role="button">buy this theme</button>
 				<div class="position-relative">
 					<div class="position-absolute" style="top:-1.5vh; right:0">
 						<div class="row position-relative">
-							<span id="hotItems" class="d-inline-block text-body m-1" style="z-index:1">Hot</span>
+							<span class="d-inline-block text-body m-1" style="z-index:1">Hot</span>
 							<i class="material-icons text-warning position-absolute" style="font-size:2.2rem">messenger</i>
 						</div>
 					</div>
@@ -191,7 +195,7 @@
 		</main>
 
 		<!--advantages container-->
-		<div id="advantagesCont" class="row d-flex justify-content center p-2 mt-md-3">
+		<div class="row d-flex justify-content center p-2 mt-md-3">
 			<div class="col d-flex justify-content-center align-items-center">
 				<i class="material-icons" style="font-size:3rem">airport_shuttle</i>
 				<div class="text-capitalize ms-xl-3" aria-label="delivery h-25">
@@ -235,7 +239,7 @@
 		</div>
 
 		<!--round categories container-->
-		<div class="d-flex justify-content-center px-4 mt-md-3">
+		<div class="d-flex justify-content-center px-4 m-4">
 			<a href="#" target="" class="d-flex justify-content-center col-2">
 				<figure class="position-relative border border-2 rounded-circle" style="overflow: hidden">
 					<img src="_img/categ.jfif" alt="" class="rounded-circle img-fluid">
@@ -281,77 +285,77 @@
 		</div>
 
 		<!--side container-->
-		<div id="sideCont" class="p-2">
-			<div id="qrCodeCont" class="">
-				<img src="#" alt="">
-				<div id="qrCodeTxtCont">
-					<p class="qrCodeTxt">enjoy convenient order tracking</p>
-					<p class="txtTitle">scan to download app</p>
+		<div class="p-2 row col-md-3">
+			<div class="d-flex">
+				<img src="_img/qrcode.jpg" alt="" class="ms-2 w-25">
+				<div class="ms-2">
+					<p class="fw-bold text-capitalize">enjoy convenient order tracking</p>
+					<span class="text-capitalize">scan to download app</span>
 				</div>
 			</div>
 
-			<div id="specialItems" class="">
-				<label class="spcTitle">
-					<i class="material-icons">star</i>
-					<span>special items</span>
+			<div class="w-100 my-3">
+				<label class="w-100 py-2 text-center text-white bg-primary rounded-top">
+					<i class="material-icons align-middle">star</i>
+					<span class="fw-bold align-middle">special items</span>
 				</label>
-				<div id="specialOffers" class="spcOffers">
-					<div class="sideOffers">
-						<img src="#" class="sideSpcImg" alt="">
-						<div class="sideSpcTxt">
-							<p class="spcTxtTop">lorem ipsum dolor</p>
-							<p class="spcTxtMid">ut enim ad minim veniam</p>
-							<label id="spcTxtValCont">
-								<span class="spcTxtVal">$45.00</span>
-								<span class="spcTxtValDisc">$60.00</span>
+				<div class="w-100 border border-1 rounded-bottom">
+					<div class="w-100 p-3 d-flex">
+						<img src="_img/sale.jfif" class="w-25" alt="">
+						<div class="ms-3">
+							<p class="text-body mb-0">lorem ipsum dolor sit</p>
+							<p class="text-body mb-0">ut enim ad minim</p>
+							<label>
+								<span class="fw-bold">$45.00</span>
+								<span class="text-secondary" style="text-decoration: line-through">$60</span>
 							</label>
 						</div>
 					</div>
 
-					<div class="sideOffers">
-						<img src="#" class="sideSpcImg" alt="">
-						<div class="sideSpcTxt">
-							<p class="spcTxtTop">lorem ipsum dolor</p>
-							<p class="spcTxtMid">ut enim ad minim veniam</p>
-							<label id="spcTxtValCont">
-								<span class="spcTxtVal">$50.00</span>
-								<span class="spcTxtValDisc">$80.00</span>
+					<div class="w-100 p-3 d-flex">
+						<img src="_img/sale.jfif" class="w-25" alt="">
+						<div class="ms-3">
+							<p class="text-body mb-0">lorem ipsum dolor sit</p>
+							<p class="text-body mb-0">ut enim ad minim</p>
+							<label>
+								<span class="fw-bold">$55.00</span>
+								<span class="text-secondary" style="text-decoration: line-through">$70</span>
 							</label>
 						</div>
 					</div>
 
-					<div class="sideOffers">
-						<img src="#" class="sideSpcImg" alt="">
-						<div class="sideSpcTxt">
-							<p class="spcTxtTop">lorem ipsum dolor</p>
-							<p class="spcTxtMid">ut enim ad minim veniam</p>
-							<label id="spcTxtValCont">
-								<span class="spcTxtVal">$60.00</span>
-								<span class="spcTxtValDisc">$90.00</span>
+					<div class="w-100 p-3 d-flex">
+						<img src="_img/sale.jfif" class="w-25" alt="">
+						<div class="ms-3">
+							<p class="text-body mb-0">lorem ipsum dolor sit</p>
+							<p class="text-body mb-0">ut enim ad minim</p>
+							<label>
+								<span class="fw-bold">$80.00</span>
+								<span class="text-secondary" style="text-decoration: line-through">$120</span>
 							</label>
 						</div>
 					</div>
 
-					<div class="sideOffers">
-						<img src="#" class="sideSpcImg" alt="">
-						<div class="sideSpcTxt">
-							<p class="spcTxtTop">lorem ipsum dolor</p>
-							<p class="spcTxtMid">ut enim ad minim veniam</p>
-							<label id="spcTxtValCont">
-								<span class="spcTxtVal">$70.00</span>
-								<span class="spcTxtValDisc">$100.00</span>
+					<div class="w-100 p-3 d-flex">
+						<img src="_img/sale.jfif" class="w-25" alt="">
+						<div class="ms-3">
+							<p class="text-body mb-0">lorem ipsum dolor sit</p>
+							<p class="text-body mb-0">ut enim ad minim</p>
+							<label>
+								<span class="fw-bold">$95.00</span>
+								<span class="text-secondary" style="text-decoration: line-through">$150</span>
 							</label>
 						</div>
 					</div>
 
-					<div class="sideOffers">
-						<img src="#" class="sideSpcImg" alt="">
-						<div class="sideSpcTxt">
-							<p class="spcTxtTop">lorem ipsum dolor</p>
-							<p class="spcTxtMid">ut enim ad minim veniam</p>
-							<label id="spcTxtValCont">
-								<span class="spcTxtVal">$80.00</span>
-								<span class="spcTxtValDisc">$150.00</span>
+					<div class="w-100 p-3 d-flex">
+						<img src="_img/sale.jfif" class="w-25" alt="">
+						<div class="ms-3">
+							<p class="text-body mb-0">lorem ipsum dolor sit</p>
+							<p class="text-body mb-0">ut enim ad minim</p>
+							<label>
+								<span class="fw-bold">$100.00</span>
+								<span class="text-secondary" style="text-decoration: line-through">$155</span>
 							</label>
 						</div>
 					</div>
@@ -359,24 +363,26 @@
 				</div>
 			</div>
 
-			<div id="sideBannerCont" class="">
-				<img src="#" id="sideBanner" alt="the body shop - mother nature's seal of approval">
+			<div class="h-50 my-2">
+				<img src="_img/sale.jfif" class="h-100 w-100 rounded" alt="the body shop - mother nature's seal of approval">
 			</div>
 
-			<div id="recommendItems" class="">
-				<label class="spcTitle">
-					<i class="material-icons">stars</i>
-					<span>recommend items</span>
-				</label>
-				<img src="#" alt="">
-				<span class="descTxt">-42%</span>
-				<p class="spcTxtTop">lorem ipsum dolor</p>
-				<p class="spcTxtMid">ut enim ad minim veniam</p>
+			<div class="w-100">
+				<div class="w-100 py-2 text-center text-white bg-primary rounded-top">
+					<i class="material-icons align-middle">star</i>
+					<span class="fw-bold align-middle">recommended items</span>
+				</div>
+				<div class="position-relative w-100 border border-1 rounded-bottom">
+					<img src="_img/sale.jfif" class="w-100 p-3" alt="">
+					<span class="position-absolute bg-warning" style="right: 4rem; top: 4rem">-42%</span>
+					<p class="spcTxtTop">lorem ipsum dolor</p>
+					<p class="spcTxtMid">ut enim ad minim veniam</p>
+				</div>
 			</div>
 		</div>
 
 		<!--hot deal container-->
-		<div id="hotDealCont" class="p-2">
+		<div class="p-2 col-md-9">
 			<div id="hotDealTxtCont" class="">
 				<label id="hotDealLbl">
 					<i class="material-icons">whatshot</i>
@@ -469,12 +475,12 @@
 		</div>
 
 		<!--promotional banner container-->
-		<div id="promoBannerCont" class="p-2">
+		<div class="p-2 col-md-9">
 			<img src="#" alt="banner with a promotional image. 50% discount guaranted on some items">
 		</div>
 
 		<!--variety container-->
-		<div id="varietyCont" class="p-2">
+		<div class="p-2 col-md-9">
 			<div id="variCont" class="">
 				<label id="variLbl">
 					<i class="material-icons">shirt</i>
@@ -487,7 +493,7 @@
 			</div>
 
 			<!--miniImages buttons-->
-			<div id="varImgs" class="">
+			<div class="">
 				<figure class="varImgsFig">
 					<button class="varImgsFigBtn">
 						<img src="#" alt="">
@@ -546,7 +552,7 @@
 			</div>
 
 			<!--offer container featuring 4 items at a time-->
-			<div id="variItemsCont" class="">
+			<div class="">
 				<div class="variOffers">
 					<div class="variTxt">
 						<p class="hotTxtTop">lorem ipsum dolor</p>
@@ -1399,7 +1405,7 @@
 		</div>
 
 		<!--footer-->
-		<footer class="p-2">
+		<footer class="p-2 col-md-9">
 			<p>desenvolvido por <a href="https://jeimoal.github.io/portifolio/">Jeison Moura</a></p>
 		</footer>
 	</div>
