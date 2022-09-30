@@ -1,3 +1,4 @@
 # E-commerce
 
-Development of a e-commerce web page, 100% using Bootstrap Framework.
+Development of a E-commerce web page, 100% using Bootstrap Framework.<br>
+Back-end not included.
