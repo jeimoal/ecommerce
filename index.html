@@ -7,36 +7,36 @@
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
 	<script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
 	<title>Best e-commerce page ever</title>
-	<link rel="icon" type="image/x-icon" href="./favicon.ico">
+	<link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
-	<div class="row justify-content-center">
+	<div class="row justify-content-around">
 		<!--header container-->
-		<header class="row bg-primary px-auto">
-			<span class="col-xl text-white text-center my-auto p-2">Get an extra 10% off or more on select hotels with Member Pricing. Join now, it's free!</span>
-			<div class="col-xl p-2 d-flex justify-content-center align-items-center" style="flex-wrap:wrap">
-				<label class="col d-flex justify-content-center">
+		<header class="col-12 bg-primary d-flex justify-content-around flex-wrap">
+			<span class="text-white text-center my-auto p-2">Get an extra 10% off or more on select hotels with Member Pricing. Join now, it's free!</span>
+			<div class="p-2 d-flex justify-content-center align-items-center flex-wrap">
+				<label class="d-flex justify-content-center me-3">
 					<a href="#" target="">
 						<span class="text-white">Login</span>
 					</a>
 				</label>
-				<label class="col">
+				<label class=" me-3">
 					<a href="#" target="" class="d-flex justify-content-center align-items-center">
 						<i class="material-icons text-white">person</i>
 						<span class="text-white text-center ms-1">my account</span>
 					</a>
 				</label>
-				<label class="d-flex justify-content-center align-items-center ms-1">
-					<figure class="col text-white mb-0">
+				<label class="d-flex justify-content-center align-items-center mx-3">
+					<figure class="text-white mb-0">
 						<img src="" alt="usa flag">
 						<img src="" alt="brazil flag" style="display: none">
 					</figure>
-					<select class="col bg-primary text-white border-0" aria-label="select language">
+					<select class="bg-primary text-white border-0" aria-label="select language">
 						<option selected class="bg-white text-body">English</option>
 						<option class="bg-white text-body">Brasileiro</option>
 					</select>
 				</label>
-				<label class="col d-flex justify-content-center align-items-center mt-1">
+				<label class="d-flex justify-content-center align-items-center mt-1">	
 					<i class="material-icons text-white">attach_money</i>
 					<select class="bg-primary text-white border-0" aria-label="select currency">
 						<option class="bg-white text-body" selected>US Dollar</option>
@@ -47,14 +47,14 @@
 		</header>
 
 		<!--search container-->
-		<div class="row p-2 bg-primary d-flex justify-content-center align-items-center">
-			<div class="col-lg-3">
+		<div class="col-12 d-flex justify-content-around flex-wrap bg-primary">
+			<div class="my-auto">
 				<a href="#headerCont" target="" class="d-flex justify-content-center align-items-center">
 					<h1 alt="company homepage" class="text-white text-uppercase text-center">top deal</h1>
 				</a>
 			</div>
-			<div class="row col-xxl-6 mx-auto">
-				<select aria-label="select category to search a product" class="col-lg-3 p-1 my-1 border-0 text-capitalize">
+			<div class="d-flex justify-content-center">
+				<select aria-label="select category to search a product" class="p-1 my-1 border-0 text-capitalize">
 					<option class="text-body bg-white" selected>all categories</option>
 					<option class="text-body bg-white">category</option>
 					<option class="text-body bg-white">category</option>
@@ -62,22 +62,22 @@
 					<option class="text-body bg-white">category</option>
 					<option class="text-body bg-white">category</option>
 				</select>
-				<input type="text" placeholder="Search" class="col-lg p-1 my-1 border-0">
-				<input type="button" value="Search" class="col-lg-3 p-1 my-1 bg-warning text-body border-0">
+				<input type="text" class="p-1 my-1 border-0" placeholder="Search">
+				<input type="button" class="p-1 my-1 bg-warning text-body border-0" value="Search">
 			</div>
-			<div class="row col pe-1 d-flex justify-content-center mt-2">
-				<label aria-label="sort items" class="col d-flex justify-content-center align-items-center mb-sm-1">
+			<div class="d-flex justify-content-center align-items-center">
+				<label aria-label="sort items" class="d-flex justify-content-center align-items-center mb-sm-1 ms-5">
 					<i class="material-icons text-white" role="button">swap_horiz</i>
 				</label>
-				<label aria-label="favorite page" class="col d-flex justify-content-center align-items-center mb-sm-1">
+				<label aria-label="favorite page" class="d-flex justify-content-center align-items-center mb-sm-1 ms-5">
 					<i class="material-icons text-white" role="button">favorite_border</i>
 				</label>
-				<div class="col mb-sm-1" role="button">
+				<div class="ms-5" role="button">
 					<div class="d-flex justify-content-center align-items-center">
-						<i class="material-icons text-white me-1">local_mall</i>
+						<i class="material-icons text-white me-2">local_mall</i>
 						<div class="text-center">
 							<p class="text-white text-center d-inline-block mb-0">My cart</p>
-							<p class="text-white text-center mt-1">0 item(s) - $0.00</p>
+							<p class="text-white text-center mt-1 mb-0">0 item(s) - $0.00</p>
 						</div>
 					</div>
 				</div>
@@ -85,7 +85,7 @@
 		</div>
 
 		<!--categories container-->
-		<nav class="row justify-content-center p-2 bg-primary">
+		<nav class="col-12 d-flex flex-wrap justify-content-center p-2 bg-primary">
 			<div class="col-lg d-flex justify-content-center">
 				<select class="rounded my-1 p-1 border-0 text-capitalize text-white bg-primary" aria-label="select a product category" role="button">
 					<option class="bg-white text-body" selected>all categories</option>
@@ -149,7 +149,7 @@
 		</nav>
 
 		<!--promo container-->
-		<main class="position-relative row d-flex justify-content-center">
+		<main class="row position-relative d-flex justify-content-center">
 			<div id="carousel" class="p-2 carousel slide col-md-8" data-bs-ride="carousel">
 				<div id="dots" class="carousel-indicators">
 					<button data-bs-target="#carousel" data-bs-slide-to="0" class="active"><i class="material-icons dots">panorama_fish_eye</i></button>
@@ -185,12 +185,12 @@
 			</div>
 
 			<div class="miniPromo row col">
-				<img src="./_img/sale.jfif" class="w-50 p-2" alt="image of a product on sale" role="button">
-				<img src="./_img/sale.jfif" class="w-50 p-2" alt="image of a product on sale" role="button">
-				<img src="./_img/sale.jfif" class="w-50 p-2" alt="image of a product on sale" role="button">
-				<img src="./_img/sale.jfif" class="w-50 p-2" alt="image of a product on sale" role="button">
-				<img src="./_img/sale.jfif" class="w-50 p-2" alt="image of a product on sale" role="button">
-				<img src="./_img/sale.jfif" class="w-50 p-2" alt="image of a product on sale" role="button">
+				<img src="_img/sale.jfif" class="w-50 p-2" alt="image of a product on sale" role="button">
+				<img src="_img/sale.jfif" class="w-50 p-2" alt="image of a product on sale" role="button">
+				<img src="_img/sale.jfif" class="w-50 p-2" alt="image of a product on sale" role="button">
+				<img src="_img/sale.jfif" class="w-50 p-2" alt="image of a product on sale" role="button">
+				<img src="_img/sale.jfif" class="w-50 p-2" alt="image of a product on sale" role="button">
+				<img src="_img/sale.jfif" class="w-50 p-2" alt="image of a product on sale" role="button">
 			</div>
 		</main>
 
@@ -242,42 +242,42 @@
 		<div class="d-flex justify-content-center px-4 m-5">
 			<a href="#" target="" class="d-flex justify-content-center col-2">
 				<figure class="position-relative border border-2 rounded-circle" style="overflow: hidden">
-					<img src="./_img/categ.jfif" alt="" class="rounded-circle img-fluid">
+					<img src="_img/categ.jfif" alt="" class="rounded-circle img-fluid">
 					<figcaption class="w-100 bg-white text-center text-uppercase text-body position-absolute" style="bottom:1em;">digital</figcaption>
 				</figure>
 			</a>
 
 			<a href="#" target="" class="d-flex justify-content-center col-2">
 				<figure class="position-relative border border-2 rounded-circle" style="overflow: hidden">
-					<img src="./_img/categ.jfif" alt="" class="rounded-circle img-fluid">
+					<img src="_img/categ.jfif" alt="" class="rounded-circle img-fluid">
 					<figcaption class="w-100 bg-white text-center text-uppercase text-body position-absolute" style="bottom:1em">fashion</figcaption>
 				</figure>
 			</a>
 
 			<a href="#" target="" class="d-flex justify-content-center col-2">
 				<figure class="position-relative border border-2 rounded-circle" style="overflow: hidden">
-					<img src="./_img/categ.jfif" alt="" class="rounded-circle img-fluid">
+					<img src="_img/categ.jfif" alt="" class="rounded-circle img-fluid">
 					<figcaption class="w-100 bg-white text-center text-uppercase text-body position-absolute" style="bottom:1em">food</figcaption>
 				</figure>
 			</a>
 
 			<a href="#" target="" class="d-flex justify-content-center col-2">
 				<figure class="position-relative border border-2 rounded-circle" style="overflow: hidden">
-					<img src="./_img/categ.jfif" alt="" class="rounded-circle img-fluid">
+					<img src="_img/categ.jfif" alt="" class="rounded-circle img-fluid">
 					<figcaption class="w-100 bg-white text-center text-uppercase text-body position-absolute" style="bottom:1em">health</figcaption>
 				</figure>
 			</a>
 
 			<a href="#" target="" class="d-flex justify-content-center col-2">
 				<figure class="position-relative border border-2 rounded-circle" style="overflow: hidden">
-					<img src="./_img/categ.jfif" alt="" class="rounded-circle img-fluid">
+					<img src="_img/categ.jfif" alt="" class="rounded-circle img-fluid">
 					<figcaption class="w-100 bg-white text-center text-uppercase text-body position-absolute" style="bottom:1em">spa</figcaption>
 				</figure>
 			</a>
 
 			<a href="#" target="" class="d-flex justify-content-center col-2">
 				<figure class="position-relative border border-2 rounded-circle" style="overflow: hidden">
-					<img src="./_img/categ.jfif" alt="" class="rounded-circle img-fluid">
+					<img src="_img/categ.jfif" alt="" class="rounded-circle img-fluid">
 					<figcaption class="w-100 bg-white text-center text-uppercase text-body position-absolute" style="bottom:1em">travel</figcaption>
 				</figure>
 			</a>
@@ -290,7 +290,7 @@
 		<!--side container-->
 		<div>
 			<div class="d-flex">
-				<img src="./_img/qrcode.jpg" alt="" class="ms-2 w-25">
+				<img src="_img/qrcode.jpg" alt="" class="ms-2 w-25">
 				<div class="ms-2">
 					<p class="fw-bold text-capitalize">enjoy convenient order tracking</p>
 					<span class="text-capitalize">scan to download app</span>
@@ -304,7 +304,7 @@
 				</label>
 				<div class="w-100 border border-1 rounded-bottom">
 					<div class="w-100 p-3 d-flex">
-						<img src="./_img/sale.jfif" class="w-25" alt="">
+						<img src="_img/sale.jfif" class="w-25" alt="">
 						<div class="ms-3">
 							<p class="text-body mb-0">lorem ipsum dolor sit</p>
 							<p class="text-body mb-0">ut enim ad minim</p>
@@ -316,7 +316,7 @@
 					</div>
 
 					<div class="w-100 p-3 d-flex">
-						<img src="./_img/sale.jfif" class="w-25" alt="">
+						<img src="_img/sale.jfif" class="w-25" alt="">
 						<div class="ms-3">
 							<p class="text-body mb-0">lorem ipsum dolor sit</p>
 							<p class="text-body mb-0">ut enim ad minim</p>
@@ -328,7 +328,7 @@
 					</div>
 
 					<div class="w-100 p-3 d-flex">
-						<img src="./_img/sale.jfif" class="w-25" alt="">
+						<img src="_img/sale.jfif" class="w-25" alt="">
 						<div class="ms-3">
 							<p class="text-body mb-0">lorem ipsum dolor sit</p>
 							<p class="text-body mb-0">ut enim ad minim</p>
@@ -340,7 +340,7 @@
 					</div>
 
 					<div class="w-100 p-3 d-flex">
-						<img src="./_img/sale.jfif" class="w-25" alt="">
+						<img src="_img/sale.jfif" class="w-25" alt="">
 						<div class="ms-3">
 							<p class="text-body mb-0">lorem ipsum dolor sit</p>
 							<p class="text-body mb-0">ut enim ad minim</p>
@@ -352,7 +352,7 @@
 					</div>
 
 					<div class="w-100 p-3 d-flex">
-						<img src="./_img/sale.jfif" class="w-25" alt="">
+						<img src="_img/sale.jfif" class="w-25" alt="">
 						<div class="ms-3">
 							<p class="text-body mb-0">lorem ipsum dolor sit</p>
 							<p class="text-body mb-0">ut enim ad minim</p>
@@ -367,7 +367,7 @@
 			</div>
 
 			<div class="my-2" style="height: 40rem">
-				<img src="./_img/sale.jfif" class="h-100 w-100 rounded" alt="the body shop - mother nature's seal of approval">
+				<img src="_img/sale.jfif" class="h-100 w-100 rounded" alt="the body shop - mother nature's seal of approval">
 			</div>
 
 			<div class="w-100">
@@ -376,7 +376,7 @@
 					<span class="fw-bold align-middle">recommended items</span>
 				</div>
 				<div class="position-relative w-100 border border-1 rounded-bottom">
-					<img src="./_img/sale.jfif" class="w-100 p-3" alt="">
+					<img src="_img/sale.jfif" class="w-100 p-3" alt="">
 					<span class="position-absolute bg-warning" style="right: 4rem; top: 4rem">-42%</span>
 					<p class="mb-0 ps-3">lorem ipsum dolor</p>
 					<p class="mb-0 ps-3">ut enim ad minim veniam</p>
@@ -406,7 +406,7 @@
 
 			<div class="p-2 d-md-flex justify-content-around">
 				<div class="col m-2 row justify-content-around">
-					<img src="./_img/sale.jfif" class="hotImg" alt="">
+					<img src="_img/sale.jfif" class="hotImg" alt="">
 					<div class="mt-2">
 						<p class="mb-0">lorem ipsum dolor</p>
 						<p class="mb-0">ut enim ad minim veniam</p>
@@ -425,7 +425,7 @@
 				</div>
 
 				<div class="col m-2 row justify-content-around">
-					<img src="./_img/sale.jfif" class="hotImg" alt="">
+					<img src="_img/sale.jfif" class="hotImg" alt="">
 					<div class="mt-2">
 						<p class="mb-0">lorem ipsum dolor</p>
 						<p class="mb-0">ut enim ad minim veniam</p>
@@ -444,7 +444,7 @@
 				</div>
 
 				<div class="col m-2 row justify-content-around">
-					<img src="./_img/sale.jfif" class="hotImg" alt="">
+					<img src="_img/sale.jfif" class="hotImg" alt="">
 					<div class="mt-2">
 						<p class="mb-0">lorem ipsum dolor</p>
 						<p class="mb-0">ut enim ad minim veniam</p>
@@ -463,7 +463,7 @@
 				</div>
 
 				<div class="col m-2 row justify-content-around">
-					<img src="./_img/sale.jfif" class="hotImg" alt="">
+					<img src="_img/sale.jfif" class="hotImg" alt="">
 					<div class="mt-2">
 						<p class="mb-0">lorem ipsum dolor</p>
 						<p class="mb-0">ut enim ad minim veniam</p>
@@ -485,7 +485,7 @@
 
 		<!--promotional banner container-->
 		<div class="p-2 col-md-12 mx-auto">
-			<img src="./_img/discount.jfif" class="w-100" alt="banner with a promotional image. 50% discount guaranted on some items">
+			<img src="_img/discount.jfif" class="w-100" alt="banner with a promotional image. 50% discount guaranted on some items">
 		</div>
 
 		<!--variety container-->
@@ -505,56 +505,56 @@
 			<div class="d-flex justify-content-around" style="flex-wrap: wrap">
 				<div>
 					<button class="btn-sm mx-1 my-4 p-0 bg-white border-0">
-						<img src="./_img/button.jpg" class="img-fluid" alt="">
+						<img src="_img/button.jpg" class="img-fluid" alt="">
 					</button>
 					<p class="mb-0 text-capitalize text-center">bags</p>
 				</div>
 
 				<div>
 					<button class="btn-sm mx-1 my-4 p-0 bg-white border-0">
-						<img src="./_img/button.jpg" class="img-fluid" alt="">
+						<img src="_img/button.jpg" class="img-fluid" alt="">
 					</button>
 					<p class="mb-0 text-capitalize text-center">dress</p>
 				</div>
 
 				<div>
 					<button class="btn-sm mx-1 my-4 p-0 bg-white border-0">
-						<img src="./_img/button.jpg" class="img-fluid" alt="">
+						<img src="_img/button.jpg" class="img-fluid" alt="">
 					</button>
 					<p class="mb-0 text-capitalize text-center">jeans</p>
 				</div>
 
 				<div>
 					<button class="btn-sm mx-1 my-4 p-0 bg-white border-0">
-						<img src="./_img/button.jpg" class="img-fluid" alt="">
+						<img src="_img/button.jpg" class="img-fluid" alt="">
 					</button>
 					<p class="mb-0 text-capitalize text-center">mens</p>
 				</div>
 
 				<div>
 					<button class="btn-sm mx-1 my-4 p-0 bg-white border-0">
-						<img src="./_img/button.jpg" class="img-fluid" alt="">
+						<img src="_img/button.jpg" class="img-fluid" alt="">
 					</button>
 					<p class="mb-0 text-capitalize text-center">t-shirt</p>
 				</div>
 
 				<div>
 					<button class="btn-sm mx-1 my-4 p-0 bg-white border-0">
-						<img src="./_img/button.jpg" class="img-fluid" alt="">
+						<img src="_img/button.jpg" class="img-fluid" alt="">
 					</button>
 					<p class="mb-0 text-capitalize text-center">trending</p>
 				</div>
 
 				<div>
 					<button class="btn-sm mx-1 my-4 p-0 bg-white border-0">
-						<img src="./_img/button.jpg" class="img-fluid" alt="">
+						<img src="_img/button.jpg" class="img-fluid" alt="">
 					</button>
 					<p class="mb-0 text-capitalize text-center">western</p>
 				</div>
 
 				<div>
 					<button class="btn-sm mx-1 my-4 p-0 bg-white border-0">
-						<img src="./_img/button.jpg" class="img-fluid" alt="">
+						<img src="_img/button.jpg" class="img-fluid" alt="">
 					</button>
 					<p class="mb-0 text-capitalize text-center">women</p>
 				</div>
@@ -586,7 +586,7 @@
 							</div>
 						</div>
 						<div class="position-relative col-7 px-0">
-							<img src="./_img/sale.jfif" class="w-100 h-100" alt="">
+							<img src="_img/sale.jfif" class="w-100 h-100" alt="">
 							<!--discount label-->
 							<label class="position-absolute bg-success rounded p-1" style="left: 1rem">
 								<span class="text-uppercase text-white fw-bold">new</span>
@@ -621,7 +621,7 @@
 							</div>
 						</div>
 						<div class="position-relative col-7 px-0">
-							<img src="./_img/sale.jfif" class="w-100 h-100" alt="">
+							<img src="_img/sale.jfif" class="w-100 h-100" alt="">
 							<!--discount label-->
 							<label class="position-absolute bg-success rounded p-1" style="left: 1rem">
 								<span class="text-uppercase text-white fw-bold">new</span>
@@ -656,7 +656,7 @@
 							</div>
 						</div>
 						<div class="position-relative col-7 px-0">
-							<img src="./_img/sale.jfif" class="w-100 h-100" alt="">
+							<img src="_img/sale.jfif" class="w-100 h-100" alt="">
 							<!--discount label-->
 							<label class="position-absolute bg-warning rounded p-1" style="right: 1rem">
 								<span class="text-uppercase text-white fw-bold">-20%</span>
@@ -687,7 +687,7 @@
 							</div>
 						</div>
 						<div class="col-7 px-0">
-							<img src="./_img/sale.jfif" class="w-100 h-100" alt="">
+							<img src="_img/sale.jfif" class="w-100 h-100" alt="">
 						</div>
 					</div>
 				</div>
